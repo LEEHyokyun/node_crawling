@@ -3,6 +3,7 @@ const express = require("express");
 // 모듈선언
 const request = require("request-promise");
 const cheerio = require("cheerio");
+const { SSL_OP_SINGLE_DH_USE } = require("node:constants");
 
 const app = express();
 const port = 3000;
